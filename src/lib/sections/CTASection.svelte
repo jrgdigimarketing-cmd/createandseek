@@ -1,0 +1,50 @@
+<script>
+  import Button from '../components/Button.svelte';
+
+  export let company;
+</script>
+
+<section class="border-b border-[var(--color-border)] bg-[#37463d]">
+  <div class="mx-auto max-w-[1240px] px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
+    <div class="mx-auto max-w-[760px] text-center">
+      <p class="text-[11px] font-semibold uppercase tracking-[0.28em] text-[rgba(250,247,241,0.52)]">
+        A useful first conversation - without obligation
+      </p>
+      <h2 class="mt-4 text-4xl font-bold tracking-[-0.04em] text-white sm:text-5xl">
+        Start with a WhatsApp message and a short onboarding conversation.
+      </h2>
+      <p class="mt-5 text-lg leading-8 text-[rgba(250,247,241,0.78)]">
+        The questionnaire helps Create and Seek understand the business and what a useful next step may be. After reviewing the information, James can invite simple next phases or, if needed, a no-obligation next conversation.
+      </p>
+
+      <div class="mx-auto mt-8 max-w-[420px] rounded-[16px] border border-[rgba(250,247,241,0.14)] bg-[rgba(250,247,241,0.08)] p-5 text-left">
+        <ul class="space-y-3 text-[15px] leading-6 text-[rgba(250,247,241,0.82)]">
+          <li class="flex gap-3">
+            <span class="mt-2 h-2 w-2 shrink-0 rounded-full bg-[var(--color-accent)]"></span>
+            <span>Begin with a WhatsApp message</span>
+          </li>
+          <li class="flex gap-3">
+            <span class="mt-2 h-2 w-2 shrink-0 rounded-full bg-[var(--color-accent)]"></span>
+            <span>Complete the onboarding questionnaire</span>
+          </li>
+          <li class="flex gap-3">
+            <span class="mt-2 h-2 w-2 shrink-0 rounded-full bg-[var(--color-accent)]"></span>
+            <span>Receive a response after the information has been reviewed</span>
+          </li>
+          <li class="flex gap-3">
+            <span class="mt-2 h-2 w-2 shrink-0 rounded-full bg-[var(--color-accent)]"></span>
+            <span>No client booking is required</span>
+          </li>
+        </ul>
+      </div>
+
+      <Button href={company.whatsapp} target="_blank" className="mt-8 bg-white text-[var(--color-primary)] hover:bg-[rgba(250,247,241,0.92)]">
+        <span>Start a WhatsApp conversation</span>
+      </Button>
+
+      <p class="mt-5 text-sm text-[rgba(250,247,241,0.44)]">
+        Privacy first. No hard sell. A practical conversation about whether the project is the right fit.
+      </p>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Landscape placeholder">
+  <rect width="1200" height="800" rx="64" fill="#f8fafc"/>
+  <rect x="90" y="90" width="1020" height="620" rx="48" fill="#e2e8f0"/>
+  <circle cx="320" cy="300" r="110" fill="#166534"/>
+  <path d="M220 570h760" stroke="#64748b" stroke-width="24" stroke-linecap="round"/>
+</svg>

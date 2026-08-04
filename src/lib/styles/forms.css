@@ -1,0 +1,13 @@
+@layer components {
+  .input-field {
+    @apply w-full rounded-[14px] border border-[var(--color-border)] bg-white px-4 py-3 text-[var(--color-foreground)] shadow-sm outline-none transition focus:border-[var(--color-primary)] focus:ring-4 focus:ring-[rgba(55,70,61,0.12)];
+  }
+
+  .field-label {
+    @apply mb-2 block text-sm font-medium text-[var(--color-foreground)];
+  }
+
+  .form-shell {
+    @apply rounded-[18px] border border-[var(--color-border)] bg-white p-6 shadow-[var(--color-shadow)] sm:p-8;
+  }
+}

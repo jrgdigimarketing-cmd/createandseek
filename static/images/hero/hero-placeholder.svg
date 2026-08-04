@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1400" role="img" aria-label="Hero placeholder">
+  <defs>
+    <linearGradient id="hero-a" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d1fae5"/>
+      <stop offset="55%" stop-color="#a7f3d0"/>
+      <stop offset="100%" stop-color="#f8fafc"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="1400" rx="80" fill="url(#hero-a)"/>
+  <circle cx="330" cy="420" r="160" fill="#166534" opacity="0.14"/>
+  <circle cx="820" cy="320" r="220" fill="#0f172a" opacity="0.05"/>
+  <rect x="150" y="820" width="900" height="360" rx="48" fill="#ffffff" opacity="0.9"/>
+  <path d="M240 960h540" stroke="#14532d" stroke-width="18" stroke-linecap="round"/>
+  <path d="M240 1030h360" stroke="#94a3b8" stroke-width="18" stroke-linecap="round"/>
+  <path d="M760 900l120 180H640l120-180Z" fill="#d97706" opacity="0.8"/>
+</svg>

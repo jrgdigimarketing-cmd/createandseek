@@ -1,0 +1,24 @@
+:root {
+  --color-bg: #faf7f1;
+  --color-surface: #ffffff;
+  --color-surface-muted: #ede7da;
+  --color-foreground: #252522;
+  --color-muted: #5e5b57;
+  --color-border: rgba(37, 37, 34, 0.09);
+  --color-primary: #37463d;
+  --color-primary-strong: #252f29;
+  --color-accent: #c4735a;
+  --color-accent-soft: rgba(196, 115, 90, 0.14);
+  --color-shadow: 0 18px 50px rgba(37, 37, 34, 0.08);
+}
+
+@layer base {
+  body {
+    background-color: var(--color-bg);
+  }
+
+  ::selection {
+    background: var(--color-primary);
+    color: #fff;
+  }
+}

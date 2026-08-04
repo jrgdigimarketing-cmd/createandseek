@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-label="Testimonial placeholder one">
+  <rect width="600" height="600" rx="64" fill="#ecfdf5"/>
+  <circle cx="300" cy="230" r="130" fill="#166534"/>
+  <rect x="140" y="390" width="320" height="110" rx="55" fill="#bbf7d0"/>
+</svg>

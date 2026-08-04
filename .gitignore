@@ -1,0 +1,16 @@
+node_modules
+.svelte-kit
+build
+.vercel
+.wrangler
+.env
+.env.*
+.env.local
+.env.*.local
+.vscode
+.idea
+*.local
+coverage
+dist
+*.log
+.DS_Store

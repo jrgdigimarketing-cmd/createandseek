@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="Social share placeholder">
+  <rect width="1200" height="630" rx="56" fill="#0f172a"/>
+  <circle cx="930" cy="180" r="180" fill="#166534" opacity="0.6"/>
+  <circle cx="240" cy="470" r="160" fill="#d97706" opacity="0.7"/>
+  <text x="90" y="190" fill="#ffffff" font-size="72" font-family="Arial, sans-serif" font-weight="700">Website Starter Template</text>
+  <text x="90" y="285" fill="#cbd5e1" font-size="34" font-family="Arial, sans-serif">Reusable SvelteKit starter for future client projects</text>
+</svg>

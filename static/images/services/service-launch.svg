@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Service launch placeholder">
+  <rect width="1200" height="800" rx="64" fill="#fff7ed"/>
+  <path d="M170 610c120-220 310-330 520-330 120 0 220 30 340 110-130 40-230 110-310 210-190 10-360 10-550 10Z" fill="#fed7aa"/>
+  <path d="M815 260l120-70-70 120" fill="#d97706"/>
+  <circle cx="600" cy="360" r="130" fill="#166534"/>
+  <path d="M555 360h90" stroke="#fff" stroke-width="18" stroke-linecap="round"/>
+  <path d="M600 315v90" stroke="#fff" stroke-width="18" stroke-linecap="round"/>
+</svg>

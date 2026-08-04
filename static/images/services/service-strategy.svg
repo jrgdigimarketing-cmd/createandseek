@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Service strategy placeholder">
+  <rect width="1200" height="800" rx="64" fill="#f8faf6"/>
+  <rect x="110" y="110" width="980" height="580" rx="44" fill="#dcfce7"/>
+  <path d="M220 530h220M220 430h340M220 330h260" stroke="#166534" stroke-width="20" stroke-linecap="round"/>
+  <circle cx="860" cy="370" r="110" fill="#d97706" opacity="0.85"/>
+  <path d="M820 370l35 35 70-80" stroke="#fff" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+</svg>

@@ -1,0 +1,27 @@
+@import "tailwindcss";
+@import "./lib/styles/colours.css";
+@import "./lib/styles/spacing.css";
+@import "./lib/styles/typography.css";
+@import "./lib/styles/forms.css";
+@import "./lib/styles/animations.css";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #faf7f1 0%, #f7f2e8 100%);
+  color: var(--color-foreground);
+}
+
+body::selection {
+  background: var(--color-primary);
+  color: white;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
