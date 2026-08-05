@@ -1,20 +1,20 @@
 export const work = [
   {
-    category: 'Marketing / Hospitality',
-    title: 'Superyachting South Africa',
-    summary: 'Conversion-focused structure with clearer enquiry pathways and stronger messaging.',
-    note: 'Content and navigation set the foundation for a cleaner handoff.'
-  },
-  {
     category: 'Accommodation / Rural Hospitality',
     title: 'Rockhaven Farm',
-    summary: 'Photography, structure and website presence shaped for a destination business.',
-    note: 'A public website and content plan are in progress.'
+    summary: 'Photography, drone work and website concept',
+    note: 'Public wording and assets to be approved'
+  },
+  {
+    category: 'Maritime / Hospitality',
+    title: 'Superyachting South Africa',
+    summary: '',
+    note: 'Contribution and permission to be confirmed'
   },
   {
     category: 'Retail / Small Business',
-    title: "Janine's Planet",
-    summary: 'WordPress implementation with a clearer path to launch and ongoing updates.',
-    note: 'Fresh website direction and launch preparation.'
+    title: "Janet's Planet",
+    summary: 'WordPress implementation',
+    note: 'Permission, screenshots and exact attribution to be approved'
   }
 ];
