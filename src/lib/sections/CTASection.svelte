@@ -17,28 +17,28 @@
         The questionnaire helps Create and Seek understand the business and what a useful next step may be. After reviewing the information, James can invite simple next phases or, if needed, a no-obligation next conversation.
       </p>
 
-      <div class="mx-auto mt-8 max-w-[420px] rounded-[8px] border border-[rgba(250,247,241,0.14)] bg-[rgba(250,247,241,0.08)] p-5 text-left">
-        <ul class="space-y-3 text-[14.4px] leading-6 text-[rgba(250,247,241,0.82)]">
+      <div class="mx-auto mt-8 max-w-[420px] rounded-[8px] border border-[rgba(250,247,241,0.72)] bg-[#faf7f1] p-5 text-left shadow-[0_18px_40px_rgba(37,37,34,0.2)]">
+        <ul class="space-y-3 text-[14.4px] font-semibold leading-6 text-[#252522]">
           <li class="flex gap-3">
-            <span class="mt-2 h-2 w-2 shrink-0 rounded-full bg-[var(--color-accent)]"></span>
+            <span class="mt-2 h-2 w-2 shrink-0 rounded-full bg-[#c4735a]"></span>
             <span>Begin with a WhatsApp message</span>
           </li>
           <li class="flex gap-3">
-            <span class="mt-2 h-2 w-2 shrink-0 rounded-full bg-[var(--color-accent)]"></span>
+            <span class="mt-2 h-2 w-2 shrink-0 rounded-full bg-[#c4735a]"></span>
             <span>Complete the onboarding questionnaire</span>
           </li>
           <li class="flex gap-3">
-            <span class="mt-2 h-2 w-2 shrink-0 rounded-full bg-[var(--color-accent)]"></span>
+            <span class="mt-2 h-2 w-2 shrink-0 rounded-full bg-[#c4735a]"></span>
             <span>Receive a response after the information has been reviewed</span>
           </li>
           <li class="flex gap-3">
-            <span class="mt-2 h-2 w-2 shrink-0 rounded-full bg-[var(--color-accent)]"></span>
+            <span class="mt-2 h-2 w-2 shrink-0 rounded-full bg-[#c4735a]"></span>
             <span>No client booking is required</span>
           </li>
         </ul>
       </div>
 
-      <Button href={company.whatsapp} target="_blank" className="mt-8 bg-white text-[var(--color-primary)] hover:bg-[rgba(250,247,241,0.92)]">
+      <Button href={company.whatsapp} target="_blank" className="mt-8 border border-[rgba(250,247,241,0.22)] bg-[#faf7f1] text-[#252522] shadow-[0_14px_30px_rgba(37,37,34,0.18)] hover:bg-white hover:text-[var(--color-primary)]">
         <span>Start a WhatsApp conversation</span>
       </Button>
 
