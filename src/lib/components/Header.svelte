@@ -1,7 +1,6 @@
 <script>
   import Button from './Button.svelte';
   import Container from './Container.svelte';
-  import Logo from './Logo.svelte';
   import MobileMenu from './MobileMenu.svelte';
   import Navigation from './Navigation.svelte';
 
@@ -14,7 +13,15 @@
 
 <header class="sticky top-0 z-40 border-b border-[rgba(37,37,34,0.1)] bg-[var(--color-bg)]">
   <Container className="flex h-[72px] items-center justify-between gap-4">
-    <Logo companyName={company.name} tagline={company.tagline} className="shrink-0" showMark={false} />
+    <a href="/" class="inline-flex shrink-0 items-center gap-3 leading-tight text-[var(--color-foreground)]">
+      <img src="/assets/create-and-seek-logo.svg" alt="" aria-hidden="true" class="h-11 w-[82px]" />
+      <span class="flex flex-col gap-0.5 leading-tight">
+        <span class="text-[16px] font-semibold tracking-[-0.01em]">{company.name}</span>
+        <span class="text-[10.88px] font-normal tracking-[0.015em] text-[var(--color-muted)]">
+          {company.tagline}
+        </span>
+      </span>
+    </a>
 
     <div class="hidden flex-1 justify-center lg:flex">
       <Navigation

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Create and Seek favicon">
+  <rect width="64" height="64" rx="10" fill="#faf7f1"/>
+  <text
+    x="32"
+    y="31"
+    fill="#476f55"
+    font-family="Manrope, Inter, Arial, sans-serif"
+    font-size="19"
+    font-weight="800"
+    text-anchor="middle"
+    letter-spacing="-1.2"
+  >C&amp;S</text>
+  <path d="M13 44H27" stroke="#476f55" stroke-width="2.2" stroke-linecap="round"/>
+  <circle cx="32" cy="44" r="3.5" fill="#f05f35"/>
+  <path d="M37 44H51" stroke="#476f55" stroke-width="2.2" stroke-linecap="round"/>
+</svg>

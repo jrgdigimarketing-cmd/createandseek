@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 96" role="img" aria-label="Create and Seek">
+  <rect width="180" height="96" rx="18" fill="#faf7f1"/>
+  <text
+    x="90"
+    y="43"
+    fill="#476f55"
+    font-family="Manrope, Inter, Arial, sans-serif"
+    font-size="34"
+    font-weight="800"
+    text-anchor="middle"
+    letter-spacing="-2"
+  >C&amp;S</text>
+  <path d="M36 66H78" stroke="#476f55" stroke-width="2.6" stroke-linecap="round"/>
+  <circle cx="90" cy="66" r="6" fill="#f05f35"/>
+  <path d="M102 66H144" stroke="#476f55" stroke-width="2.6" stroke-linecap="round"/>
+</svg>
