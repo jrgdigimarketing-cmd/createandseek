@@ -45,7 +45,7 @@
   <ProcessSection />
   <TestimonialsSection />
   <MapSection {company} />
-  <FAQSection items={faq} />
   <CTASection {company} />
+  <FAQSection items={faq} />
   <ContactSection {company} />
 </SiteLayout>

@@ -31,13 +31,13 @@
 </script>
 
 <section id="process" class="border-b border-[var(--color-border)] bg-[var(--color-bg)]">
-  <div class="mx-auto max-w-[1240px] px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
+  <div class="mx-auto max-w-[1240px] px-4 py-16 sm:px-6 sm:py-20 lg:px-6 lg:py-24">
     <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
       <div class="max-w-2xl space-y-3">
-        <h2 class="text-4xl font-bold tracking-[-0.04em] text-[var(--color-foreground)] sm:text-5xl">
+        <h2 class="text-[2rem] font-bold leading-[1.1] tracking-[-0.02em] text-[var(--color-foreground)] sm:text-[2.5rem]">
           A clear path from idea to launch
         </h2>
-        <p class="text-lg leading-8 text-[var(--color-muted)]">
+        <p class="text-[16.8px] leading-[1.65] text-[var(--color-muted)]">
           Eighteen years of delivery experience distilled into a simple process that keeps the work clear and the decision-making practical.
         </p>
       </div>
@@ -48,14 +48,14 @@
 
     <ol class="mt-10 grid gap-4 md:grid-cols-2 xl:grid-cols-5">
       {#each steps as step}
-        <li class="rounded-[14px] border border-[var(--color-border)] bg-white p-5 shadow-[0_2px_10px_rgba(37,37,34,0.05)]">
+        <li class="rounded-[12px] border border-[var(--color-border)] bg-white p-5 shadow-[0_2px_8px_rgba(55,70,61,0.06)]">
           <div class="flex items-start gap-4">
-            <span class="grid h-9 w-9 shrink-0 place-items-center rounded-[10px] bg-[rgba(196,115,90,0.14)] text-sm font-semibold text-[var(--color-accent)]">
+            <span class="grid h-8 w-8 shrink-0 place-items-center rounded-[8px] bg-[rgba(196,115,90,0.14)] text-[12px] font-semibold text-[var(--color-accent)]">
               {step.number}
             </span>
             <div>
-              <h3 class="text-[18px] font-semibold tracking-[-0.03em] text-[var(--color-foreground)]">{step.title}</h3>
-              <p class="mt-2 text-[15px] leading-7 text-[var(--color-muted)]">{step.description}</p>
+              <h3 class="text-[16px] font-semibold tracking-[-0.02em] text-[var(--color-foreground)]">{step.title}</h3>
+              <p class="mt-2 text-[14px] leading-[1.55] text-[var(--color-muted)]">{step.description}</p>
             </div>
           </div>
         </li>

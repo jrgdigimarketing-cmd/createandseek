@@ -7,12 +7,25 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+  min-width: 0;
 }
 
 body {
   min-height: 100vh;
   background: linear-gradient(180deg, #faf7f1 0%, #f7f2e8 100%);
   color: var(--color-foreground);
+  overflow-x: hidden;
+}
+
+main,
+section {
+  overflow-x: clip;
 }
 
 body::selection {

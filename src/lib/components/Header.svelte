@@ -1,5 +1,4 @@
 <script>
-  // Sticky site header that switches between desktop nav and a mobile drawer.
   import Button from './Button.svelte';
   import Container from './Container.svelte';
   import Logo from './Logo.svelte';
@@ -13,28 +12,28 @@
   let mobileMenuOpen = false;
 </script>
 
-<header class="sticky top-0 z-40 border-b border-[var(--color-border)] bg-[rgba(250,247,241,0.88)] backdrop-blur-xl">
-  <Container className="flex h-[76px] items-center gap-3 sm:h-[80px] sm:gap-4">
-    <Logo companyName={company.name} tagline={company.tagline} className="shrink-0" />
+<header class="sticky top-0 z-40 border-b border-[rgba(37,37,34,0.1)] bg-[var(--color-bg)]">
+  <Container className="flex h-[72px] items-center justify-between gap-4">
+    <Logo companyName={company.name} tagline={company.tagline} className="shrink-0" showMark={false} />
 
     <div class="hidden flex-1 justify-center lg:flex">
       <Navigation
-        {navigation}
-        className="rounded-full border border-[var(--color-border)] bg-white/75 px-2 py-1 shadow-[0_12px_28px_rgba(37,37,34,0.04)] backdrop-blur"
-        linkClass="block rounded-full px-4 py-2 text-sm text-[rgba(37,37,34,0.72)] hover:bg-[var(--color-bg)] hover:text-[var(--color-foreground)] focus-visible:bg-[var(--color-bg)] focus-visible:text-[var(--color-foreground)]"
+        links={navigation}
+        className="gap-5"
+        linkClass="block rounded-[4px] px-1 py-0.5 text-sm font-medium text-[rgba(37,37,34,0.7)] hover:text-[var(--color-foreground)] focus-visible:text-[var(--color-foreground)]"
       />
     </div>
 
     <div class="ml-auto hidden sm:block">
-      <Button href={primaryCta.href} target="_blank" className="shadow-sm">
-        <span class="inline-flex h-5 w-5 items-center justify-center rounded-full bg-white/10 text-[10px] font-semibold leading-none">W</span>
+      <Button href={primaryCta.href} target="_blank" className="min-h-10 px-4 py-2.5 text-sm">
+        <img src="/icons/figma/whatsapp.svg" alt="" aria-hidden="true" class="h-4 w-4" />
         <span>{primaryCta.label}</span>
       </Button>
     </div>
 
     <button
       type="button"
-      class="ml-auto inline-flex h-11 w-11 items-center justify-center rounded-full border border-[var(--color-border)] bg-white/80 text-[var(--color-foreground)] shadow-sm transition hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-primary)] lg:hidden sm:ml-0"
+      class="ml-auto inline-flex h-10 w-10 items-center justify-center rounded-[8px] border border-[var(--color-border)] bg-white/70 text-[var(--color-foreground)] transition hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-primary)] lg:hidden sm:ml-0"
       aria-expanded={mobileMenuOpen}
       aria-controls="mobile-menu"
       aria-label="Open menu"
