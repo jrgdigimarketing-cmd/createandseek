@@ -1,0 +1,6 @@
+interface:
+  display_name: "SvelteKit Website Workflow"
+  short_description: "Build lean SvelteKit sites from Figma references"
+  default_prompt: "Use $sveltekit-website-workflow to build this SvelteKit website from the supplied Figma references while reusing the existing template."
+policy:
+  allow_implicit_invocation: true
