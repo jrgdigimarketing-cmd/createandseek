@@ -30,8 +30,20 @@
   ];
 </script>
 
-<section id="process" class="border-b border-[var(--color-border)] bg-[var(--color-bg)]">
-  <div class="mx-auto max-w-[1240px] px-4 py-16 sm:px-6 sm:py-20 lg:px-6 lg:py-24">
+<section id="process" class="relative isolate overflow-hidden border-b border-[var(--color-border)] bg-[var(--color-bg)]">
+  <div class="pointer-events-none absolute inset-0 z-0">
+    <img
+      src="/images/create-and-seek/approach-background.jpg"
+      alt=""
+      aria-hidden="true"
+      loading="lazy"
+      decoding="async"
+      class="h-full w-full scale-[1.02] object-cover blur-[2px]"
+    />
+    <div class="absolute inset-0 bg-[rgba(250,247,241,0.64)]"></div>
+  </div>
+
+  <div class="relative z-10 mx-auto max-w-[1240px] px-4 py-16 sm:px-6 sm:py-20 lg:px-6 lg:py-24">
     <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
       <div class="max-w-2xl space-y-3">
         <h2 class="text-[2rem] font-bold leading-[1.1] tracking-[-0.02em] text-[var(--color-foreground)] sm:text-[2.5rem]">

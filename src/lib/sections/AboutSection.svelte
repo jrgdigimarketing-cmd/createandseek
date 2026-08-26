@@ -26,7 +26,7 @@
       </div>
 
       <div class="overflow-hidden rounded-[12px] bg-[#ede7da] shadow-[var(--color-shadow)]">
-        <img src={image} alt="Coastal town nestled against mountains in the Cape region" class="aspect-[507/380] h-full w-full object-cover" />
+        <img src={image} alt="Coastal town nestled against mountains in the Cape region" loading="lazy" decoding="async" class="aspect-[507/380] h-full w-full object-cover" />
       </div>
     </div>
   </div>

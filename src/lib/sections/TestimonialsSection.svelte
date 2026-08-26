@@ -16,25 +16,36 @@
     <div class="mt-12 flex flex-col items-center gap-5 lg:flex-row lg:justify-center lg:gap-0">
       {#each work as item, index}
         <div
-          class={`w-full max-w-[351px] ${
+          class={`relative w-full max-w-[351px] transition duration-300 ease-out hover:z-50 hover:-translate-y-3 hover:scale-[1.03] focus-within:z-50 ${
             index === 0
-              ? 'lg:mr-[-120px] lg:w-[398px] lg:-rotate-6'
-              : index === 2
-                ? 'lg:w-[398px] lg:rotate-6'
-                : 'lg:z-10 lg:mr-[-120px] lg:w-[351px]'
+              ? 'lg:w-[320px] lg:rotate-[-8deg] lg:z-10'
+              : index === 1
+                ? 'lg:-ml-[120px] lg:w-[320px] lg:rotate-[-4deg] lg:z-20'
+                : index === 2
+                  ? 'lg:-ml-[120px] lg:w-[320px] lg:z-30'
+                  : index === 3
+                    ? 'lg:-ml-[120px] lg:w-[320px] lg:rotate-[4deg] lg:z-20'
+                    : 'lg:-ml-[120px] lg:w-[320px] lg:rotate-[8deg] lg:z-10'
           }`}
         >
+          <a
+            href={item.href || undefined}
+            target={item.href ? '_blank' : undefined}
+            rel={item.href ? 'noopener noreferrer' : undefined}
+            aria-label={item.href ? `Visit ${item.title} website` : undefined}
+            class="block h-full"
+          >
           <article class="flex h-full min-h-[468px] flex-col overflow-hidden rounded-[12px] border border-[rgba(37,37,34,0.12)] bg-[#faf7f1] shadow-[0_14px_30px_-10px_rgba(0,0,0,0.12)]">
-            <div class="flex h-[262px] flex-col items-center justify-center gap-2 bg-[#ede7da] px-6 text-center">
-              <div class="flex h-8 w-8 items-center justify-center rounded-full border-2 border-[rgba(94,91,87,0.25)]">
-                <span class="h-3 w-3 rounded-full bg-[rgba(94,91,87,0.2)]"></span>
-              </div>
-              <p class="text-[11.52px] font-semibold uppercase leading-[1.5] tracking-[0.09em] text-[rgba(94,91,87,0.6)]">
-                Image placeholder
-              </p>
-              <p class="text-[12px] leading-[1.5] text-[rgba(94,91,87,0.5)]">
-                Approved project material only
-              </p>
+            <div class="h-[262px] bg-[#ede7da]">
+              {#if item.image}
+                <img
+                  src={item.image}
+                  alt={item.title}
+                  loading="lazy"
+                  decoding="async"
+                  class="h-full w-full object-cover"
+                />
+              {/if}
             </div>
 
             <div class="flex flex-1 flex-col gap-3 p-6">
@@ -56,6 +67,7 @@
               </div>
             </div>
           </article>
+          </a>
         </div>
       {/each}
     </div>

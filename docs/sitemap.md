@@ -10,11 +10,10 @@
 ## Section anchors
 
 - `#hero`
-- `#features`
+- `#approach`
 - `#services`
-- `#about`
 - `#process`
-- `#testimonials`
+- `#work`
+- `#experience`
 - `#faq`
 - `#contact`
-

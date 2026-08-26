@@ -21,3 +21,10 @@ export const testimonials = [
       'It feels polished, organized, and ready for a real workflow instead of a throwaway demo.'
   }
 ];
+
+export const featuredTestimonial = {
+  name: 'Janet',
+  role: "Janet's Planet",
+  quote:
+    'I can highly recommend James as a website builder & designer. Throughout the whole process, he was very communicative, offering advice and suggestions, whilst still listening to my needs. He has a great work ethic and is committed, reliable and focused.'
+};

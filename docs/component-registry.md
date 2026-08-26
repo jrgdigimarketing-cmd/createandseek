@@ -35,11 +35,17 @@
 - `src/lib/sections/ServicesSection.svelte`
 - `src/lib/sections/FeaturesSection.svelte`
 - `src/lib/sections/ProcessSection.svelte`
+- `src/lib/sections/TestimonialBanner.svelte`
 - `src/lib/sections/TestimonialsSection.svelte`
 - `src/lib/sections/MapSection.svelte`
 - `src/lib/sections/CTASection.svelte`
 - `src/lib/sections/FAQSection.svelte`
 - `src/lib/sections/ContactSection.svelte`
+
+## Section Notes
+
+- `src/lib/sections/TestimonialBanner.svelte` is the reusable featured-testimonial pattern used immediately after the services section.
+- `src/lib/sections/TestimonialsSection.svelte` owns the overlapping selected-work fan deck and hover elevation behavior.
 
 ## Data Files
 
@@ -47,4 +53,5 @@
 - `src/lib/data/navigation.js`
 - `src/lib/data/services.js`
 - `src/lib/data/faq.js`
+- `src/lib/data/testimonials.js`
 - `src/lib/data/work.js`

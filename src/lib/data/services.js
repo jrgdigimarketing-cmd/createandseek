@@ -1,44 +1,44 @@
 export const services = [
   {
-    eyebrow: 'Recommended starting point',
-    title: 'Clarity-to-Launch Website',
+    eyebrow: 'Simple digital footprint',
+    title: 'Single-Page Brochure Site',
     bestFor:
-      'Owner-led businesses that need help deciding what their website should say and include.',
+      'Businesses that need a clear, professional online presence with one focused page and an easy way for people to get in touch.',
     includes: [
-      'Clarify the page structure and content priorities',
-      'Shape copy and conversion flow',
-      'Design, build and launch a clear site',
-      'Keep the process guided from first brief to handoff'
+      'One-page brochure site for your core business information',
+      'WhatsApp call button',
+      'Embedded Google Map',
+      'Mobile-friendly design and launch'
     ],
-    price: 'From R8,500',
-    note: 'Best fit for a business that wants clarity before anything gets built.'
+    price: 'From R2,500',
+    note: 'A focused starting point with no forms, extra pages or complicated systems.'
   },
   {
-    eyebrow: 'Best for a refresh',
-    title: 'Established Website Refresh',
+    eyebrow: 'Best for a growing business',
+    title: 'Five-Page Website',
     bestFor:
-      'Businesses that already have the right content but want a cleaner structure and better presentation.',
+      'Businesses that need more room to explain their services and give visitors several clear ways to enquire.',
     includes: [
-      'Review and simplify the current site',
-      'Improve layout, hierarchy and readability',
-      'Tune mobile and desktop behaviour',
-      'Preserve what already works well'
+      'Up to five pages',
+      'Contact forms and email setup',
+      'Basic on-page SEO',
+      'Mobile-friendly design and launch'
+    ],
+    price: 'From R8,000',
+    note: 'A practical next step when a single page is no longer enough.'
+  },
+  {
+    eyebrow: 'For a tailored digital setup',
+    title: 'Full-Spec Website & Integrations',
+    bestFor:
+      'Businesses that need a more complete website alongside digital systems that support how the business operates.',
+    includes: [
+      'Everything in the five-page website',
+      'Booking systems with payment gateways, plus learning management systems and CRMs',
+      'Additional functionality priced to specification',
+      'Additional photography and content support where needed'
     ],
     price: 'From R12,500',
-    note: 'Ideal when the content exists but the current website no longer supports the business well.'
-  },
-  {
-    eyebrow: 'Best for a first launch',
-    title: 'AI Code First & Launch',
-    bestFor:
-      'Businesses that want a fast, practical launch while keeping the build easy to manage later.',
-    includes: [
-      'Use AI-assisted workflows where they add speed',
-      'Review and correct content and structure',
-      'Fine-tune SEO, forms and technical setup',
-      'Leave the site ready for future edits'
-    ],
-    price: 'From R4,500',
-    note: 'For lighter builds or where the brief is already clear and concise.'
+    note: 'Priced to scope where integrations, photography or more involved setup are required.'
   }
 ];

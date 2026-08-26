@@ -2,14 +2,14 @@
   import Button from '../components/Button.svelte';
 
   export let company;
-  const image = '/images/create-and-seek/notebook.jpg';
+  const image = '/images/create-and-seek/james-grimstead.jpg';
 </script>
 
 <section id="experience" class="border-b border-[var(--color-border)] bg-[var(--color-bg)]">
   <div class="mx-auto max-w-[1240px] px-4 py-16 sm:px-6 sm:py-20 lg:px-6 lg:py-24">
     <div class="grid items-center gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:gap-14">
       <div class="overflow-hidden rounded-[12px] bg-[#111] shadow-[var(--color-shadow)]">
-        <img src={image} alt="A pen resting on an open notebook representing a considered, detail-oriented approach to planning" class="aspect-[507/380] h-full w-full object-cover" />
+        <img src={image} alt="James Grimstead" loading="lazy" decoding="async" class="aspect-[507/380] h-full w-full object-cover" />
       </div>
 
       <div class="space-y-5">

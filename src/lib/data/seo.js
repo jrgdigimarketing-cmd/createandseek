@@ -1,9 +1,9 @@
 export const defaultSeo = {
-  siteName: 'Website Starter Template',
-  title: 'Website Starter Template',
+  siteName: 'Create and Seek',
+  title: 'Create and Seek | Website discovery, design and development',
   description:
-    'A production-ready SvelteKit website starter for future client projects.',
-  image: '/images/placeholders/social-share.svg',
+    'Create and Seek helps owner-led businesses clarify, design and launch clear, credible websites.',
+  image: '/images/create-and-seek/social-share.jpg',
   twitterCard: 'summary_large_image',
-  themeColor: '#0f172a'
+  themeColor: '#37463d'
 };

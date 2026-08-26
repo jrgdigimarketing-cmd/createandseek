@@ -11,7 +11,7 @@
   let mobileMenuOpen = false;
 </script>
 
-<header class="sticky top-0 z-40 border-b border-[rgba(37,37,34,0.1)] bg-[var(--color-bg)]">
+<header class="sticky top-0 z-40 border-b border-[rgba(37,37,34,0.1)] bg-[rgba(250,247,241,0.88)] backdrop-blur-md">
   <Container className="flex h-[72px] items-center justify-between gap-4">
     <a href="/" class="inline-flex shrink-0 items-center gap-3 leading-tight text-[var(--color-foreground)]">
       <img src="/assets/create-and-seek-logo-round.svg" alt="" aria-hidden="true" class="h-11 w-11" />

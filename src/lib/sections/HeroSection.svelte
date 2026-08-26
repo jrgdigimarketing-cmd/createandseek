@@ -6,8 +6,10 @@
 </script>
 
 <section id="hero" class="border-b border-[var(--color-border)] bg-[var(--color-bg)]">
-  <div class="relative overflow-hidden bg-[#2a2e2b]">
-    <img src={heroImage} alt="" class="absolute inset-0 h-full w-full object-cover" />
+  <div
+    class="relative overflow-hidden bg-[#2a2e2b] bg-cover bg-center bg-fixed"
+    style={`background-image: url('${heroImage}');`}
+  >
     <div
       class="absolute inset-0"
       style="background-image: linear-gradient(180deg, rgba(37,37,34,0.55) 0%, rgba(37,37,34,0.15) 35%), linear-gradient(0deg, rgba(37,37,34,0.92) 0%, rgba(37,37,34,0.55) 40%, rgba(37,37,34,0) 70%);"

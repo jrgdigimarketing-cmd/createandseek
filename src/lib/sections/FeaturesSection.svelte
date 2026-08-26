@@ -47,8 +47,8 @@
         <p class="max-w-4xl text-[14.4px] leading-[1.6] text-[var(--color-foreground)]">
           The goal is not to choose the largest option. It is to choose the smallest appropriate solution that can support the business now and grow where there is evidence to justify it.
         </p>
-        <a href="#contact" class="inline-flex items-center gap-2 text-sm font-medium text-[var(--color-primary)] hover:text-[var(--color-primary-strong)]">
-          <span>Ask a question</span>
+        <a href="#work" class="inline-flex items-center gap-2 text-sm font-medium text-[var(--color-primary)] hover:text-[var(--color-primary-strong)]">
+          <span>See examples</span>
           <span aria-hidden="true">›</span>
         </a>
       </div>
