@@ -1,4 +1,6 @@
 <script>
+  import MobileDisclosure from '$lib/components/MobileDisclosure.svelte';
+
   const options = [
     {
       number: '01',
@@ -37,7 +39,12 @@
         <article class="rounded-[12px] border border-[var(--color-border)] bg-white p-6 shadow-[0_2px_8px_rgba(55,70,61,0.06)]">
           <p class="text-[24px] font-semibold leading-none tracking-[-0.03em] text-[var(--color-accent)]">{option.number}</p>
           <h3 class="mt-4 text-[17px] font-semibold tracking-[-0.02em] text-[var(--color-foreground)]">{option.title}</h3>
-          <p class="mt-3 text-[14.4px] leading-[1.6] text-[var(--color-muted)]">{option.description}</p>
+          <div class="mt-3 sm:hidden">
+            <MobileDisclosure summary="Why this fits">
+              <p class="text-[14.4px] leading-[1.6] text-[var(--color-muted)]">{option.description}</p>
+            </MobileDisclosure>
+          </div>
+          <p class="mt-3 hidden text-[14.4px] leading-[1.6] text-[var(--color-muted)] sm:block">{option.description}</p>
         </article>
       {/each}
     </div>

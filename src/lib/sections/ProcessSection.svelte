@@ -1,5 +1,6 @@
 <script>
   import Button from '../components/Button.svelte';
+  import MobileDisclosure from '$lib/components/MobileDisclosure.svelte';
 
   const steps = [
     {
@@ -67,7 +68,12 @@
             </span>
             <div>
               <h3 class="text-[16px] font-semibold tracking-[-0.02em] text-[var(--color-foreground)]">{step.title}</h3>
-              <p class="mt-2 text-[14px] leading-[1.55] text-[var(--color-muted)]">{step.description}</p>
+              <div class="mt-2 sm:hidden">
+                <MobileDisclosure summary="Step details">
+                  <p class="text-[14px] leading-[1.55] text-[var(--color-muted)]">{step.description}</p>
+                </MobileDisclosure>
+              </div>
+              <p class="mt-2 hidden text-[14px] leading-[1.55] text-[var(--color-muted)] sm:block">{step.description}</p>
             </div>
           </div>
         </li>

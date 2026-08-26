@@ -1,4 +1,6 @@
 <script>
+  import MobileDisclosure from '$lib/components/MobileDisclosure.svelte';
+
   export let services = [];
 </script>
 
@@ -22,7 +24,20 @@
           <p class="mt-5 text-[10.88px] font-bold uppercase leading-[1.5] tracking-[0.1em] text-[rgba(37,37,34,0.5)]">Best for</p>
           <p class="mt-2 text-[14.4px] leading-[1.6] text-[var(--color-foreground)]">{service.bestFor}</p>
 
-          <div class="mt-5 space-y-3">
+          <div class="mt-5 sm:hidden">
+            <MobileDisclosure summary="Show includes">
+              <ul class="space-y-2">
+                {#each service.includes as include}
+                  <li class="flex items-start gap-3 text-[14.4px] leading-[1.6] text-[var(--color-foreground)]">
+                    <span class="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--color-accent)]"></span>
+                    <span>{include}</span>
+                  </li>
+                {/each}
+              </ul>
+            </MobileDisclosure>
+          </div>
+
+          <div class="mt-5 hidden space-y-3 sm:block">
             <p class="text-[10.88px] font-bold uppercase leading-[1.5] tracking-[0.1em] text-[rgba(37,37,34,0.5)]">Includes</p>
             <ul class="space-y-2">
               {#each service.includes as include}
