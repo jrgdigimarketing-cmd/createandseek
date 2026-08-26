@@ -7,15 +7,16 @@
 
 <section id="hero" class="border-b border-[var(--color-border)] bg-[var(--color-bg)]">
   <div
-    class="relative overflow-hidden bg-[#2a2e2b] bg-cover bg-center bg-fixed"
-    style={`background-image: url('${heroImage}');`}
+    class="relative isolate grid overflow-hidden bg-[#2a2e2b]"
   >
-    <div
-      class="absolute inset-0"
-      style="background-image: linear-gradient(180deg, rgba(37,37,34,0.55) 0%, rgba(37,37,34,0.15) 35%), linear-gradient(0deg, rgba(37,37,34,0.92) 0%, rgba(37,37,34,0.55) 40%, rgba(37,37,34,0) 70%);"
-    ></div>
+    <div class="pointer-events-none sticky top-0 col-start-1 row-start-1 h-[100dvh] min-h-[620px] bg-cover bg-center lg:min-h-[686px]" style={`background-image: url('${heroImage}');`}>
+      <div
+        class="absolute inset-0"
+        style="background-image: linear-gradient(180deg, rgba(37,37,34,0.55) 0%, rgba(37,37,34,0.15) 35%), linear-gradient(0deg, rgba(37,37,34,0.92) 0%, rgba(37,37,34,0.55) 40%, rgba(37,37,34,0) 70%);"
+      ></div>
+    </div>
 
-    <div class="relative mx-auto min-h-[620px] max-w-[1240px] px-4 py-10 sm:px-6 sm:py-12 lg:min-h-[686px] lg:px-8 lg:py-12">
+    <div class="relative col-start-1 row-start-1 mx-auto min-h-[620px] max-w-[1240px] px-4 py-10 sm:px-6 sm:py-12 lg:min-h-[686px] lg:px-8 lg:py-12">
       <div class="flex h-full flex-col justify-between gap-10">
         <div class="max-w-4xl space-y-6 text-white sm:w-full" style="width: min(100%, calc(100vw - 64px));">
           <p class="text-[9.5px] font-semibold uppercase tracking-[0.24em] text-[rgba(250,247,241,0.52)] sm:text-[11px] sm:tracking-[0.32em]">
