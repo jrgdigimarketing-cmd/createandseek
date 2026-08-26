@@ -22,7 +22,14 @@
 
     <div class="absolute right-0 top-0 flex h-full w-full max-w-sm flex-col overflow-y-auto border-l border-[var(--color-border)] bg-[rgba(250,247,241,0.98)] p-5 shadow-2xl sm:p-6">
       <div class="flex items-center justify-between gap-4">
-        <Logo {companyName} {tagline} showTagline={false} className="shrink-0" />
+        <Logo
+          {companyName}
+          {tagline}
+          href="#hero"
+          showTagline={false}
+          className="shrink-0"
+          onClick={() => (open = false)}
+        />
         <button
           type="button"
           class="grid h-10 w-10 shrink-0 place-items-center rounded-full border border-[var(--color-border)] text-[var(--color-foreground)] transition hover:bg-black/5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-primary)]"

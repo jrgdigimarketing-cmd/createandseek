@@ -8,10 +8,12 @@
   export let showMark = true;
   export let className = '';
   export let markSrc = '/logos/logo-mark.svg';
+  export let onClick = undefined;
 </script>
 
 <a
   href={href}
+  onclick={onClick}
   class={`inline-flex items-center gap-3 leading-tight ${inverse ? 'text-[var(--color-bg)]' : 'text-[var(--color-foreground)]'} ${className}`}
 >
   {#if showMark}
