@@ -7,7 +7,7 @@
 </script>
 
 <article class="surface-panel overflow-hidden">
-  <img src={image} alt={`${title} placeholder image`} class="h-52 w-full object-cover" />
+  <img src={image} alt={`${title}`} class="h-52 w-full object-cover" />
   <div class="p-6">
     <h3 class="text-xl font-semibold text-slate-900">{title}</h3>
     <p class="mt-3 text-sm leading-7 text-slate-600">{summary}</p>

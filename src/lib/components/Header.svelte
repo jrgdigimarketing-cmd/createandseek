@@ -32,7 +32,7 @@
     </div>
 
     <div class="ml-auto hidden sm:block">
-      <Button href={primaryCta.href} target="_blank" className="min-h-10 px-4 py-2.5 text-sm">
+      <Button href={primaryCta.href} target="_blank" analyticsEvent="primary_cta_click" className="min-h-10 px-4 py-2.5 text-sm">
         <img src="/icons/figma/whatsapp.svg" alt="" aria-hidden="true" class="h-4 w-4" />
         <span>{primaryCta.label}</span>
       </Button>

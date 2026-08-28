@@ -39,7 +39,7 @@
           </div>
 
           <div class="flex flex-wrap gap-3 pt-2 sm:pt-3">
-            <Button href={company.whatsapp} target="_blank" className="min-h-11 bg-[#37463d] px-5 py-3 text-[14.4px] text-white hover:bg-[#2b3831]">
+            <Button href={company.whatsapp} target="_blank" analyticsEvent="whatsapp_click" className="min-h-11 bg-[#37463d] px-5 py-3 text-[14.4px] text-white hover:bg-[#2b3831]">
               <img src="/icons/figma/whatsapp.svg" alt="" aria-hidden="true" class="h-4 w-4" />
               <span>Start a WhatsApp conversation</span>
             </Button>

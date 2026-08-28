@@ -12,7 +12,7 @@
 <section id="gallery">
   <SectionWrapper
     eyebrow="Gallery"
-    title="Placeholder visual grid"
+    title="Selected work"
     description="This section is ready for future photography, product shots, or project highlights."
   >
     <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">

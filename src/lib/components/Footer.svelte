@@ -24,7 +24,7 @@
 
     <div class="mt-8 flex flex-col gap-3 border-t border-[rgba(250,247,241,0.1)] pt-6 text-[12.48px] text-[rgba(250,247,241,0.35)] sm:flex-row sm:items-center sm:justify-between">
       <p>{company.copyright}</p>
-      <p>{company.privacy}</p>
+      <a href="/privacy" class="hover:text-[rgba(250,247,241,0.92)]">Privacy policy</a>
     </div>
   </Container>
 </footer>

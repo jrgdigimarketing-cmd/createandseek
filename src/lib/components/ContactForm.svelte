@@ -1,15 +1,14 @@
 <script>
-  // Placeholder contact form that can be connected to any future backend.
   export let title = 'Send a brief';
 </script>
 
-<form class="form-shell">
+<form class="form-shell" data-analytics-form="contact_form_submit">
   <div class="stack-gap">
     <div>
       <p class="section-eyebrow">Get in touch</p>
       <h2 class="mt-3 text-2xl font-semibold tracking-tight text-slate-900">{title}</h2>
       <p class="mt-2 text-sm leading-6 text-slate-600">
-        This starter ships with placeholder inputs so future client forms can be wired into a real backend later.
+        Share a few details about the business, goals, and timing so the first conversation can be useful.
       </p>
     </div>
 
@@ -39,7 +38,7 @@
       <button type="submit" class="inline-flex items-center justify-center rounded-full bg-emerald-700 px-5 py-3 text-sm font-semibold text-white transition hover:bg-emerald-800">
         Send inquiry
       </button>
-      <p class="text-sm text-slate-500">Replace this with your preferred form handler during production setup.</p>
+      <p class="text-sm text-slate-500">Your details are used only to respond to this enquiry.</p>
     </div>
   </div>
 </form>

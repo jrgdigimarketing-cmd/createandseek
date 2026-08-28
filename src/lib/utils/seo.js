@@ -1,5 +1,6 @@
 import { company } from '../data/company.js';
 import { defaultSeo } from '../data/seo.js';
+import { site } from '../data/site.js';
 
 export function buildSeo(page = {}) {
   const title = page.title ? `${page.title} | ${company.name}` : defaultSeo.title;
@@ -9,6 +10,7 @@ export function buildSeo(page = {}) {
     ...page,
     title,
     description: page.description || defaultSeo.description,
-    image: page.image || defaultSeo.image
+    image: page.image || defaultSeo.image,
+    url: page.url || site.url
   };
 }

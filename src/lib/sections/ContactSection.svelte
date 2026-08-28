@@ -14,13 +14,13 @@
         Start with a WhatsApp message. Create and Seek will explain the next step and provide the onboarding questionnaire.
       </p>
 
-      <Button href={company.whatsapp} target="_blank" className="mt-8 min-h-[50px] bg-[var(--color-primary)] px-7 py-3.5 text-[15.2px] text-white hover:bg-[var(--color-primary-strong)]">
+      <Button href={company.whatsapp} target="_blank" analyticsEvent="whatsapp_click" className="mt-8 min-h-[50px] bg-[var(--color-primary)] px-7 py-3.5 text-[15.2px] text-white hover:bg-[var(--color-primary-strong)]">
         <img src="/icons/figma/whatsapp.svg" alt="" aria-hidden="true" class="h-4 w-4" />
         <span>Start a WhatsApp conversation</span>
       </Button>
 
       <div class="mt-6 space-y-2">
-        <a href={`tel:${company.phone.replace(/\s/g, '')}`} class="block text-[15px] leading-7 text-[var(--color-muted)] hover:text-[var(--color-primary)]">
+        <a data-analytics-event="phone_click" href={`tel:${company.phone.replace(/\s/g, '')}`} class="block text-[15px] leading-7 text-[var(--color-muted)] hover:text-[var(--color-primary)]">
           {company.phoneDisplay}
         </a>
         <p class="text-sm text-[var(--color-muted)]">{company.location}</p>

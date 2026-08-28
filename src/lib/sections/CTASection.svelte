@@ -38,7 +38,7 @@
         </ul>
       </div>
 
-      <Button href={company.whatsapp} target="_blank" className="mt-8 border border-[rgba(250,247,241,0.22)] bg-[#faf7f1] text-[#252522] shadow-[0_14px_30px_rgba(37,37,34,0.18)] hover:bg-white hover:text-[var(--color-primary)]">
+      <Button href={company.whatsapp} target="_blank" analyticsEvent="whatsapp_click" className="mt-8 border border-[rgba(250,247,241,0.22)] bg-[#faf7f1] text-[#252522] shadow-[0_14px_30px_rgba(37,37,34,0.18)] hover:bg-white hover:text-[var(--color-primary)]">
         <span>Start a WhatsApp conversation</span>
       </Button>
 

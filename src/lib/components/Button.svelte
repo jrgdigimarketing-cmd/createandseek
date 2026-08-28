@@ -6,6 +6,7 @@
   export let className = '';
   export let target = undefined;
   export let rel = undefined;
+  export let analyticsEvent = undefined;
 
   const styles = {
     primary:
@@ -25,6 +26,7 @@
     href={href}
     {target}
     rel={rel ?? (target === '_blank' ? 'noreferrer noopener' : undefined)}
+    data-analytics-event={analyticsEvent}
     class={`${baseClasses} ${styles[variant]} ${className}`}
   >
     <slot />
