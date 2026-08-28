@@ -7,6 +7,14 @@
   onMount(() => {
     if (!gtmId) return;
 
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+
+    const script = document.createElement('script');
+    script.async = true;
+    script.src = `https://www.googletagmanager.com/gtm.js?id=${gtmId}`;
+    document.head.appendChild(script);
+
     const handleClick = (event) => {
       const target = event.target.closest('[data-analytics-event]');
       if (!target || !window.dataLayer) return;
@@ -33,16 +41,6 @@
     };
   });
 </script>
-
-<svelte:head>
-  {#if gtmId}
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      window.dataLayer.push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
-    </script>
-    <script async src={`https://www.googletagmanager.com/gtm.js?id=${gtmId}`}></script>
-  {/if}
-</svelte:head>
 
 {#if gtmId}
   <noscript>
