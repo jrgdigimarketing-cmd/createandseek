@@ -1,7 +1,8 @@
 <script>
   import { onMount } from 'svelte';
+  import { env } from '$env/dynamic/public';
 
-  const gtmId = import.meta.env.PUBLIC_GTM_ID || '';
+  const gtmId = env.PUBLIC_GTM_ID || '';
 
   onMount(() => {
     if (!gtmId) return;
