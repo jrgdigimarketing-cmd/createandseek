@@ -89,7 +89,7 @@
   <meta name="twitter:description" content={seo.description} />
   <meta name="twitter:image" content={`${siteUrl}${seo.image}`} />
   <meta name="twitter:url" content={`${seo.url}/`} />
-  <script type="application/ld+json">{@html JSON.stringify(structuredData)}</script>
+  <script type="application/ld+json">{JSON.stringify(structuredData)}</script>
 </svelte:head>
 
 <SiteLayout {company} {navigation} {primaryCta}>
